@@ -62,7 +62,7 @@ func (s *RedisStore) Health() bool {
 	return true
 }
 
-// Reads the TIME from Redis.
+// Now reads the TIME from Redis.
 func (s *RedisStore) Now() time.Time {
 	rc := s.redisPool.Get()
 	defer rc.Close()

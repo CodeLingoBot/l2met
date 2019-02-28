@@ -40,7 +40,7 @@ type Channel struct {
 	numOutlets int
 }
 
-// Returns an initialized Metchan Channel.
+// New returns an initialized Metchan Channel.
 // Creates a new HTTP client for direct access to Librato.
 // This channel is orthogonal with other librato http clients in l2met.
 // If a blank URL is given, no metric posting attempt will be made.
